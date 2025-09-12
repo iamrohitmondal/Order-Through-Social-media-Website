@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="pagestyle.css" rel="stylesheet">
+
+<head>
+    <meta cha₹et="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    
+</head>
+
+<body>
+    <div class="nav" style="font-family:Lucida Calligraphy; color: white;">
+        Welcome To TM Creation
+        <!-- <ul>
+            <li>Contact US</li>
+            <li>Share Details</li>
+        </ul> -->
+    </div>
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="https://i.ibb.co/Nc5bSW7/Choker.webp?text=choker" alt="Product 1"
+                onclick="openLightbox(this.src)">
+
+
+
+            <div class="product--name">Choker 1</div>
+            <p><span class="price">&#8377;149</span> - a short necklace designed to fit snugly around the neck,
+                typically made from a variety of materials like velvet, lace, metal, or beads, and can range from simple
+                bands to ornate, jewel-encrusted pieces.</p>
+
+
+            <a href="#" class="order-btn"
+                onclick="orderNow('Choker 1', '&#8377;149', 'https://i.ibb.co/Nc5bSW7/Choker.webp?Choker 1')">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="https://i.ibb.co/TDQv26KR/Choker2.webp?text=Choker 2" alt="Product 2"
+                onclick="openLightbox(this.src)">
+
+
+            <div class="product--name">Choker 2</div>
+            <p><span class="price">&#8377;149</span> - a short necklace designed to fit snugly around the neck,
+                typically made from a variety of materials like velvet, lace, metal, or beads, and can range from simple
+                bands to ornate, jewel-encrusted pieces.</p>
+
+
+
+            <a href="#" class="order-btn"
+                onclick="orderNow('Choker 2', '&#8377;149', 'https://i.ibb.co/TDQv26KR/Choker2.webp?Choker 2')">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
+        </div>
+
+        <!-- product 3 -->
+        <div class="product">
+            <img src="https://i.ibb.co/xZRDyNG/Long-Necklace.webp?text=Long-Necklace 1" alt="Product 3"
+                onclick="openLightbox(this.src)">
+
+
+            <div class="product--name">Long-Necklace 1</div>
+            <p><span class="price">&#8377;149</span> - an ornament worn around the neck, commonly a chain of metal,
+                string, beads, or gems, used for adornment or as a symbol of status.</p>
+
+
+            <a href="#" class="order-btn"
+                onclick="orderNow('Long-Necklace 1','&#8377;149', 'https://i.ibb.co/xZRDyNG/Long-Necklace.webp?Long-Necklace 1')">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
+        </div>
+
+        <!-- product 4 -->
+        <div class="product">
+            <img src="https://i.ibb.co/vxz6st27/Long-Necklace-2.webp?text=Long-Necklace 2" alt="Product 4"
+                onclick="openLightbox(this.src)">
+
+
+            <div class="product--name">Long-Necklace 2</div>
+            <p><span class="price">&#8377;149</span> - an ornament worn around the neck, commonly a chain of metal,
+                string, beads, or gems, used for adornment or as a symbol of status.</p>
+
+
+            <a href="#" class="order-btn"
+                onclick="orderNow('Long-Necklace 1','&#8377;149', 'https://i.ibb.co/vxz6st27/Long-Necklace-2.webp?Long-Necklace 2')">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
+        </div>
+
+
+        <!-- product 5 -->
+        <div class="product">
+            <img src="https://i.ibb.co/zT681VKH/Bangles.webp?text=Bangles" alt="Product 5"
+                onclick="openLightbox(this.src)">
+
+            <!-- PRODUCT DESCRIPTION -->
+            <div class="product--name">Bangles</div>
+            <p><span class="price">&#8377;149</span> - bangles decorated with cloth are vibrant, handcrafted accessories
+                featuring detailed embroidery, mirror work, or printed designs on fabric like cotton or silk. They offer
+                a traditional, festive look distinct from metal jewelry.</p>
+            <!-- PRODUCT DESCRIPTION -->
+
+            <a href="#" class="order-btn"
+                onclick="orderNow('Long-Necklace 1','&#8377;149', 'https://i.ibb.co/zT681VKH/Bangles.webp?Bangles')">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- for zooming -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <a href="#" class="top"><i class='fas fa-arrow-alt-circle-up' alt="Go Top"></i></a>
+        <div class="follow">
+            <div class="followus">Follow us on</div>
+            <!-- youtube -->
+            <a href="https://youtube.com/@tmcreation-u9j?si=mO4TxLbtUxShor93"><img
+                    src="https://i.ibb.co/Jw2XqvM6/You-Tube-social-white-square-2024-svg.jpg" class="youtube"
+                    alt="GoYoutube" onclick="openYoutube()"></a>
+
+            <a href="#"><img src="https://i.ibb.co/ZR1hB4KW/2a89fee1a635745cec680e88efa49bcc.jpg" class="instagram"
+                    alt="GoInstagram"></a>
+        </div>
+
+
+        <div class="last-line">
+            <p>
+            <h2>&reg;</h2> 2025 All rights reserved by TM Creation</p>
+        </div>
+
+    </div>
+
+
+
+    <script src="pagemain.js"> </script>
+</body>
+
+</html>
