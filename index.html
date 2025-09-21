@@ -2,6 +2,7 @@
 <html lang="en">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="pagestyle.css" rel="stylesheet">
+<link href="darktheme.css" rel="stylesheet">
 
 <head>
     <meta cha₹et="UTF-8">
@@ -11,12 +12,13 @@
 </head>
 
 <body>
-    <div class="nav" style="font-family:Lucida Calligraphy; color: white;">
-        Welcome To TM Creation
-        <!-- <ul>
-            <li>Contact US</li>
-            <li>Share Details</li>
-        </ul> -->
+       <div class="nav" style="font-family:Lucida Calligraphy;">
+        <span style="display: flex ; justify-content: center; align-items: center;gap:.3em;"> 
+            <a href="#" style="display: flex;"><img src="https://i.ibb.co/LDQM17hW/yt-logo.webp" class="logo"></a>TM Creation</span>
+        <div class="themechanger">
+            <span id="darktheme" onclick="makeScreenDark()"><img src="https://i.ibb.co/bGkqR82/3104472.webp"> </span>
+            <span id="lighttheme" onclick="makeScreenLight()"><img src="https://i.ibb.co/B2PjW19x/979585.webp"> </span>
+        </div>
     </div>
     <div class="container">
         <!-- Product 1 -->
@@ -148,6 +150,7 @@
 
     <script src="pagemain.js"> </script>
     <script src="addproduct.js"></script>
+    <script src="themechange.js"></script>
 </body>
 
 </html>
