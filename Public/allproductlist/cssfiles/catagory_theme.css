@@ -1,0 +1,55 @@
+.catagorybody.darker {
+    background: #000000;
+    color: white;
+}
+
+.catagorythemechanger.darker {
+    border-color: white;
+}
+
+.seperate.darker {
+    background-color:black;
+    box-shadow: 0 0 0 0 white;
+}
+
+.catagory-container.darker {
+    /* background-color: rgb(28 116 174); */
+    background:radial-gradient(circle,rgba(0, 149, 255, 1) 33%, rgba(252, 70, 107, 1) 100%);
+    box-shadow: inset 0px -3px 20px 8px black;
+}
+
+
+#catagory-darktheme.darker {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white
+}
+
+#catagory-lighttheme.darker {
+    background: none;
+    border: none;
+}
+
+.externalpanel.darker {
+    background-color: rgb(60 255 192 / 56%);
+    color: white;
+    box-shadow: -1px 2px 13px 4px rgb(245 242 242);
+}
+
+.externalpanel:hover.darker,
+.externalpanel:active.darker {
+    transition: transform ease .1s;
+    transform: scale(.9);
+    box-shadow: 0px 0px 5px 7px rgb(245 242 242);
+    background-color: rgba(8, 176, 123, 0.56);
+}
+
+.cardboard.darker {
+    box-shadow: -1px 11px 11px -1px black;
+}
+
+.cardboard:active.darker,.cardboard:hover.darker {
+    transition: transform ease .2s;
+    transform: scale(.9);
+    box-shadow: 0px 0px 7px 7px rgb(0, 0, 0);
+    
+}

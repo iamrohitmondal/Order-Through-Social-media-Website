@@ -1,4 +1,4 @@
-let classes = '.nav,.product,#darktheme,#lighttheme,.price,.product--name , .product p, .order-btn, .product img';
+let classes = '.nav,.product,#darktheme,#lighttheme,.price,.product--name , .product p, .order-btn, .product img,.headertitle, .header-back';
 let ontheway = document.querySelectorAll(classes);
 
 function makeScreenDark() {
@@ -26,11 +26,11 @@ mediaQuery.addEventListener('change', e1 => {
 });
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    
+
     makeScreenDark()
 
 } else {
-    
+
     makeScreenLight()
 
 }

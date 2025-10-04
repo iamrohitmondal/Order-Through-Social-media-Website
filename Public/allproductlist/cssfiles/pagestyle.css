@@ -5,6 +5,7 @@
 
         html {
             scroll-behavior: smooth;
+            height: 100%;
         }
 
         body {
@@ -13,7 +14,7 @@
             margin: 0;
             padding: 0;
             position: relative;
-            height: auto;
+            height: 100%;
         }
 
         .nav {
@@ -73,6 +74,7 @@
         #lighttheme img {
             width: 2.3em;
             height: 2.3em;
+            cursor: pointer;
         }
 
         #lighttheme {
@@ -95,6 +97,86 @@
             /* position: relative; */
 
         }
+
+        .container {
+
+            .choker,
+            .necklace,
+            .earring,
+            .bangles,
+            .jhumka,
+            .ring,
+            .armlets {
+                height: auto;
+                width: auto;
+            }
+        }
+
+        .container .allproduct {
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* here new */
+
+        .header-back {
+            position: relative;
+            color: rgb(235, 233, 233);
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 1em;
+            overflow: hidden;
+            background-color: rgb(226, 226, 226);
+            border-radius: 50px;
+            padding: 5px;
+            z-index: 1;
+
+        }
+
+        .header-back::before {
+            position: absolute;
+            content: "";
+            background: linear-gradient(90deg, rgba(0, 168, 240, 1) 21%, rgba(255, 0, 183, 1) 50%, rgba(187, 255, 0, 1) 78%);
+            width: 70em;
+            height: 70em;
+            z-index: -1;
+            animation: spinborder 3s linear infinite;
+
+        }
+
+        @keyframes spinborder {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .headertitle {
+            color: rgb(48, 47, 47);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99%;
+            height: 90%;
+            font-size: 2em;
+            background-color: rgb(226, 226, 226);
+            border-radius: 50px;
+            padding: 5px;
+            z-index: 1;
+            box-shadow: inset 0 0 13px 5px black;
+            ;
+
+        }
+
 
         .product {
             background: white;
@@ -181,10 +263,23 @@
             box-shadow: 0 0 9px 3px rgb(0, 0, 0);
         }
 
+        #arrow-top {
+            display: none;
+            position: fixed;
+            background-color: rgba(61, 255, 252, 0.73);
+            height: 1.5em;
+            width: 1.5em;
+            top: 91%;
+            left: 86%;
+            padding: .5em;
+            cursor: pointer;
+            border-radius: 1em;
+        }
 
         .footer {
             width: 100%;
             height: 10em;
+            top: 100%;
             background-color: black;
             display: grid;
             grid-template-areas: "top top top"
@@ -193,7 +288,8 @@
             justify-content: center;
 
             color: rgb(255, 255, 255);
-
+            margin-bottom: 0;
+            margin-left: 0;
 
             font-size: 15px;
         }
@@ -299,6 +395,9 @@
         }
 
         .lightbox img {
+            width: auto;
+            height: auto;
+
             max-width: 90%;
 
             max-height: 90%;
@@ -366,6 +465,11 @@
             #lighttheme img {
                 width: 1.2em;
                 height: 2.3em;
+            }
+
+            .header-back::before {
+                width: 27em;
+                height: 27em;
             }
 
 
@@ -448,6 +552,10 @@
                 background-color: #0f7434
             }
 
+            #arrow-top {
+                left: 88%;
+            }
+
             .footer {
                 position: relative;
                 width: 100%;
@@ -515,7 +623,8 @@
                 border: 1px solid rgb(255, 255, 255);
             }
 
-            .youtube:active,.youtube:hover {
+            .youtube:active,
+            .youtube:hover {
                 transition: transform 0.2s ease;
                 transform: scale(1.2);
             }
@@ -532,7 +641,8 @@
 
             }
 
-            .instagram:active,.instagram:hover {
+            .instagram:active,
+            .instagram:hover {
                 transition: transform 0.2s ease;
                 transform: scale(1.2);
             }
