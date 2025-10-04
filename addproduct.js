@@ -126,10 +126,11 @@ function createProduct() {
             return;
         }
     });
-
+ 
 
 }
 createProduct()
+
 // function emptydiv(){
     
 //   catagory.forEach(cat => {
