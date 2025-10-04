@@ -1,6 +1,6 @@
 let sellerNumber = ""; // Replace with your WhatsApp number (without + or spaces)
 
-fetch("javafiles/slnum.json")
+fetch("slnum.json")
     .then(res => res.json())
     .then(data => {
         sellerNumber = data.sellerNumber;

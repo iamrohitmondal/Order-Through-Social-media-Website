@@ -1,4 +1,4 @@
-   fetch("allproductlist/javafiles/slnum.json")
+   fetch("slnum.json")
         .then(res => res.json())
         .then(data => {
             sellerNumber = data.sellerNumber;
