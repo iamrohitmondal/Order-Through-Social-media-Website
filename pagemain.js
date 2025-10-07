@@ -56,3 +56,6 @@ window.addEventListener("scroll", () => {
         arrowTop.style.display = "none"
     }
 })
+ setTimeout(()=>{
+            document.getElementById("coverScreen").style.display="none"
+        },5000)
