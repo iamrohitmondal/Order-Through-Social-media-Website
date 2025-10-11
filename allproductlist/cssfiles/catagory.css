@@ -213,7 +213,7 @@
 .catagoryopening-image {
     width: 9em;
     height: 11em;
-    
+    display: none;
     top: 5%;
     left: -1%;
     align-self: flex-start;
@@ -225,7 +225,7 @@
     position: fixed;
 }
 
-.catagoryopening-image:active {
+.catagoryopening-image:active,.catagoryopening-image:hover {
 
     transform: scale(2.3) rotate(-20deg);
 }

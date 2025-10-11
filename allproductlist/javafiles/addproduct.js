@@ -99,6 +99,7 @@ let html = productToAdd.map(e => {
                 onclick="openLightbox(this.src)">
 
             <!-- PRODUCT DESCRIPTION -->
+        <span class="description-of-product">
             <div class="product--name">${e.productNames}</div>
             <p><span class="price">&#8377;${e.productPrice}</span> - ${e.productDescription}</p>
             <!-- PRODUCT DESCRIPTION -->
@@ -107,6 +108,7 @@ let html = productToAdd.map(e => {
                 onclick="orderNow('${e.productNames}','&#8377;${e.productPrice}', '${e.productImg}?${e.productNames}')">
                 <i class="fab fa-whatsapp"></i> Order on WhatsApp
             </a>
+        </span>
         </div>`
 });
 
@@ -126,11 +128,10 @@ function createProduct() {
             return;
         }
     });
- 
+
 
 }
 createProduct()
-
 // function emptydiv(){
     
 //   catagory.forEach(cat => {

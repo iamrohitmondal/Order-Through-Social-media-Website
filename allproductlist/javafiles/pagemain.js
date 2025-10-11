@@ -1,6 +1,6 @@
 let sellerNumber = ""; // Replace with your WhatsApp number (without + or spaces)
 
-fetch("slnum.json")
+fetch("javafiles/slnum.json")
     .then(res => res.json())
     .then(data => {
         sellerNumber = data.sellerNumber;
@@ -56,6 +56,10 @@ window.addEventListener("scroll", () => {
         arrowTop.style.display = "none"
     }
 })
- setTimeout(()=>{
-            document.getElementById("coverScreen").style.display="none"
-        },5000)
+
+setTimeout(() => {
+    document.getElementById("coverScreen").style.display = "none"
+
+}, 4000)
+
+

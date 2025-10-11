@@ -67,3 +67,6 @@ body.dark {
     background-color: #146c00;
     box-shadow: 0 0 9px 3px white;
 }
+#loader.dark{
+   border-top: .3em solid rgb(255, 255, 255);
+}

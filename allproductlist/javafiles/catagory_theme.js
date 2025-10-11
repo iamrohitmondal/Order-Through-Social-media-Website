@@ -1,4 +1,4 @@
-let catagoryClasses = '.catagorybody,.catagorythemechanger,.seperate,.catagory-container,.externalpanel,.cardboard,#catagory-darktheme,#catagory-lighttheme';
+let catagoryClasses = '.catagorybody,.catagorythemechanger,.seperate,.catagory-container,.externalpanel,.cardboard,#catagory-darktheme,#catagory-lighttheme,#loader';
 // let ontheway = document.querySelectorAll(catagoryClasses);
 
 function makecatagoryScreenDark() {

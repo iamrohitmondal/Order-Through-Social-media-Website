@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="pagestyle.css" rel="stylesheet">
-<link href="darktheme.css" rel="stylesheet">
-<link href="catagory.css" rel="stylesheet">
-<link href="catagory_theme.css" rel="stylesheet">
+<link href="allproductlist/cssfiles/pagemain.css" rel="stylesheet">
+<link href="allproductlist/cssfiles/darktheme.css" rel="stylesheet">
+<link href="allproductlist/cssfiles/catagory.css" rel="stylesheet">
+<link href="allproductlist/cssfiles/catagory_theme.css" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="allproduct/favicon.ico">
 
 
@@ -19,7 +19,11 @@
 
 <body>
     <div id="coverScreen">
-        <div id="loader"></div>
+        <div id="loader">
+            <div class="loader2">
+            <div class="loader3"></div>
+        </div>
+    </div>
     </div>
     <div class="nav" style="font-family:Lucida Calligraphy;">
         <span style="display: flex ; justify-content: center; align-items: center;gap:.3em;">
@@ -51,25 +55,25 @@
                     <div class="catagory-container">
                         <div class="catagory-productlist">
                             <span class="cardboard"><img src="https://i.ibb.co/bMxDZ273/earrings-16987658.png"
-                                    class="imageicons" onclick="redirectTo('earrings.html')"><span
+                                    class="imageicons" onclick="redirectTo('allproductlist/earrings.html')"><span
                                     class="Title">Earrings</span></span>
                             <span class="cardboard"><img src="https://i.ibb.co/60LGdYv5/necklace-17290224-1.png"
-                                    class="imageicons" onclick="redirectTo('necklace.html')"><span
+                                    class="imageicons" onclick="redirectTo('allproductlist/necklace.html')"><span
                                     class="Title">Necklace</span></span>
                             <span class="cardboard"><img src="https://i.ibb.co/dsCbQgjB/14651363.png" class="imageicons"
-                                    onclick="redirectTo('chokers.html')"><span class="Title">Chokers
+                                    onclick="redirectTo('allproductlist/chokers.html')"><span class="Title">Chokers
                                 </span></span>
                             <span class="cardboard"><img src="https://i.ibb.co/QRX6mYS/18475156.png" class="imageicons"
-                                    onclick="redirectTo('bangles.html')"><span class="Title">Bangles
+                                    onclick="redirectTo('allproductlist/bangles.html')"><span class="Title">Bangles
                                 </span></span>
                             <span class="cardboard"><img src="https://i.ibb.co/RkvK3qfg/18482724.png" class="imageicons"
-                                    onclick="redirectTo('jhumkas.html')"><span class="Title">Jhumkas
+                                    onclick="redirectTo('allproductlist/jhumkas.html')"><span class="Title">Jhumkas
                                 </span></span>
                             <span class="cardboard"><img src="https://i.ibb.co/HLYPjwwD/7873565.png" class="imageicons"
-                                    onclick="redirectTo('rings.html')"><span
+                                    onclick="redirectTo('allproductlist/rings.html')"><span
                                     class="Title">Rings</span></span>
                             <span class="cardboard"><img src="https://i.ibb.co/yFRPjSC2/3109809.png" class="imageicons"
-                                    onclick="redirectTo('armlets.html')"><span
+                                    onclick="redirectTo('allproductlist/armlets.html')"><span
                                     class="Title">Armlets</span></span>
 
                         </div>
@@ -89,12 +93,12 @@
 
                     </div> -->
 
-                    
+
                 </div>
             </div>
 
         </div>
-<div class="catagoryclose"></div>
+        <div class="catagoryclose"></div>
 
 
 
@@ -111,17 +115,17 @@
     </div>
     <!-- <div class="container allproduct"></div> -->
 
-    <div class="container earring"><span class="header-back">  <span class="headertitle"> Earrings </span></span></div>
-    <div class="container choker"><span class="header-back">   <span class="headertitle"> Chokers  </span></span></div>
+    <div class="container earring"><span class="header-back"> <span class="headertitle"> Earrings </span></span></div>
+    <div class="container choker"><span class="header-back"> <span class="headertitle"> Chokers </span></span></div>
     <div class="container necklace"> <span class="header-back"><span class="headertitle"> Necklace </span></span></div>
-    <div class="container bangles"><span class="header-back">  <span class="headertitle"> Bangles  </span></span></div>
-    <div class="container ring"><span class="header-back">     <span class="headertitle"> Ring     </span></span></div>
-    <div class="container jhumka"> <span class="header-back">  <span class="headertitle"> Jhumka   </span></span></div>
-    <div class="container armlets"> <span class="header-back"> <span class="headertitle"> Armlets  </span></span></div>
+    <div class="container bangles"><span class="header-back"> <span class="headertitle"> Bangles </span></span></div>
+    <div class="container ring"><span class="header-back"> <span class="headertitle"> Ring </span></span></div>
+    <div class="container jhumka"> <span class="header-back"> <span class="headertitle"> Jhumka </span></span></div>
+    <div class="container armlets"> <span class="header-back"> <span class="headertitle"> Armlets </span></span></div>
 
 
     <!-- How product innerhtml structured ---- product 0 -->
-     
+
     <!-- <div class="product">
             <img src="https://i.ibb.co/zT681VKH/Bangles.webp?text=Bangles" alt="Product 5"
                 onclick="openLightbox(this.src)"> -->
@@ -140,14 +144,13 @@
         </div>-->
 
     </div>
-    <img src="https://i.ibb.co/s9Kk8MLT/318169.webp" id="arrow-top"
-                                            onclick="redirectTo('#')">
+    <img src="https://i.ibb.co/s9Kk8MLT/318169.webp" id="arrow-top" onclick="redirectTo('#')">
 
     <!-- for zooming -->
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
         <img id="lightbox-img" src="">
     </div>
-
+    <div class="fake-loader"><div class="fake-loader2"></div></div>
     <!-- footer -->
     <div class="footer">
         <a href="#" class="top"><i class='fas fa-arrow-alt-circle-up' alt="Go Top"></i></a>
@@ -165,18 +168,20 @@
 
         <div class="last-line">
             <p>
-            <h2>&reg;</h2> 2025 All rights reserved by TM Creation</p>
+            <h2>&copy;</h2> 2025 All rights reserved by TM Creation</p>
         </div>
 
     </div>
 
 
-<script src="fetchnum.js"></script>
-<script src="pagemain.js"></script>
-<script src="addproduct.js"></script>
-<script src="themechange.js"></script>
-<script src="catagory_theme.js"></script>
-<script src="catagory.js"></script>
+    <script src="fetchnum.js"></script>
+    <script src="allproductlist/javafiles/pagemain.js"></script>
+    <script src="allproductlist/javafiles/addproduct.js"></script>
+    <script src="allproductlist/javafiles/themechange.js"></script>
+    <script src="allproductlist/javafiles/catagory_theme.js"></script>
+    <script src="allproductlist/javafiles/catagory.js"></script>
+    <script src="allproductlist/javafiles/seperate_Index_loading.js"></script>
+
 
 
 </body>
