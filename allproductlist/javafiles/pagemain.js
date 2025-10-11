@@ -61,5 +61,3 @@ setTimeout(() => {
     document.getElementById("coverScreen").style.display = "none"
 
 }, 4000)
-
-

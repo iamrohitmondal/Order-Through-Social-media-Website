@@ -118,6 +118,7 @@ function createProduct() {
         const allProductlist = document.querySelector(".container.allproduct");
         if (useclass) {
             useclass.innerHTML += html[index];
+ 
         }else {
            return;
         }
@@ -132,6 +133,7 @@ function createProduct() {
 
 }
 createProduct()
+
 // function emptydiv(){
     
 //   catagory.forEach(cat => {
