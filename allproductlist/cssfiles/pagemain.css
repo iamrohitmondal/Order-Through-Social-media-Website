@@ -582,7 +582,7 @@
             }
 
             .product {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 position: relative;
                 min-width: 90%;
