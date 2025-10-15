@@ -41,9 +41,10 @@
             border-top: .2em solid rgb(255, 9, 152);
             border-radius: 60%;
             animation: spin 1s linear 0s infinite;
-            
+
         }
-          .loader2 {
+
+        .loader2 {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -53,16 +54,17 @@
             border-top: .2em solid rgb(3, 154, 255);
             border-radius: 60%;
             animation: spin 5s linear 0s infinite;
-            
+
         }
-          .loader3 {
+
+        .loader3 {
             height: 3em;
             width: 3em;
             background: none;
             border-top: .2em solid rgb(255, 255, 255);
             border-radius: 60%;
             animation: spin 9s linear 0s infinite;
-            
+
         }
 
         @keyframes spin {
@@ -89,16 +91,17 @@
         }
 
         .fake-loader2 {
-           
+
             background: none;
-            border-right:3px solid rgb(255, 0, 212);
+            border-right: 3px solid rgb(255, 0, 212);
             width: 2.7em;
             height: 2.7em;
             border-radius: 60%;
-             animation: spinner 3s linear 0s infinite;
+            animation: spinner 3s linear 0s infinite;
         }
-        @keyframes spinner{
-           to{
+
+        @keyframes spinner {
+            to {
                 transform: rotate(360deg);
             }
         }
@@ -246,7 +249,7 @@
                 transform: rotate(360deg);
             }
         }
-       
+
 
         .headertitle {
             color: rgb(48, 47, 47);
@@ -487,16 +490,70 @@
             background: rgba(0, 0, 0, 0.825);
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+            gap: 1em;
         }
 
-        .lightbox img {
+        #zoom-and-close {
+            display: flex;
+            width: 80%;
+            height: 5em;
+            padding: .3em;
+            justify-content: space-between;
+            align-items: center;
+            height: 5em;
+        }
+
+        #zoom {
+            width: 8em;
+            height: 2.4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5em;
+            padding: .5em;
+            background-color: rgba(128, 128, 128, 0.566);
+            border-radius: 30px;
+            margin-top: -2em;
+            z-index: 125775;
+
+        }
+
+        #zoomIn,
+        #zoomout {
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            margin-bottom: 0;
+
+        }
+
+
+        .lightbox-img {
             width: auto;
             height: auto;
-
             max-width: 90%;
-
             max-height: 90%;
             border-radius: 8px;
+        }
+
+        .lightboxclose {
+            display: flex;
+            height: 2.5em;
+            /* width: 96%; */
+            padding: .3em;
+            z-index: 99999;
+            /* margin-right: 0; */
+            align-items: center;
+            justify-content: center;
+            margin-bottom: .2em;
+            top: 10em;
+
+        }
+
+        .closeimg {
+            height: 2em;
+            width: 1.7em;
         }
 
         /* media query */
@@ -566,10 +623,11 @@
                 width: 27em;
                 height: 27em;
             }
-             .fake-loader{
-             top: 84%;
-            left: 44%;
-        }
+
+            .fake-loader {
+                top: 84%;
+                left: 44%;
+            }
 
 
             .container {
@@ -653,6 +711,36 @@
             .order-btn:active {
                 transform: scale(0.9);
                 background-color: #0f7434
+            }
+
+            #lightbox-img {
+                height: auto;
+                width: auto;
+                max-height: 90%;
+                max-width: 90%;
+                margin-bottom: 1em;
+
+            }
+
+            #zoom {
+                width: 5em;
+                height: 2em;
+                gap:1em;
+
+            }
+            #zoomIn,#zoomout{
+                height: 2em;
+                width: 1.5em;
+                padding: 5px;
+            }
+
+            #lightboxclose {
+                margin-left: 1em;
+                margin-bottom: 1em;
+            }
+
+            #zoom-and-close {
+                width: 80%;
             }
 
             #arrow-top {

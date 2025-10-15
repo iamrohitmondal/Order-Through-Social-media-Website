@@ -60,4 +60,16 @@ window.addEventListener("scroll", () => {
 setTimeout(() => {
     document.getElementById("coverScreen").style.display = "none"
 
-}, 4000)
+}, 4000);
+const element = document.getElementById("lightbox-img");
+    let currentScale = 1; // Initial scale
+
+    function zoomIn() {
+        currentScale *= 1.2; // Increase scale by 20%
+        element.style.transform = `scale(${currentScale})`;
+    }
+
+    function zoomout() {
+        currentScale /= 1.2; // Decrease scale by 20%
+        element.style.transform = `scale(${currentScale})`;
+    }

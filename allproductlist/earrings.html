@@ -55,8 +55,16 @@
     </div>
     <img src="https://i.ibb.co/s9Kk8MLT/318169.webp" id="arrow-top" onclick="redirectTo('#')">
     <!-- for zooming -->
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox" id="lightbox">
         <img id="lightbox-img" src="">
+         <div id="zoom-and-close">
+            <div class="lightboxclose"><img src="https://i.ibb.co/67RBQ5M7/3285855.webp" class="closeimg"
+                    onclick="closeLightbox()"></div>
+            <div id="zoom">
+                <img src="https://i.ibb.co/Csbqf6gQ/16799204.webp" id="zoomIn" alt="zoomIn" onclick="zoomIn()">
+                <img src="https://i.ibb.co/SDBpcbcF/10024235.webp" id="zoomout" alt="zoomout" onclick="zoomout()">
+            </div>
+        </div>
     </div>
 
     <!-- footer -->
