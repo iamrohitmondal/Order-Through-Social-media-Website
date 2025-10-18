@@ -24,6 +24,7 @@ function openLightbox(src) {
 }
 function closeLightbox() {
     document.getElementById("lightbox").style.display = "none";
+    document.getElementById("lightbox-img").style.transform ="";
 }
 
 document.addEventListener('contextmenu', function (e) {
